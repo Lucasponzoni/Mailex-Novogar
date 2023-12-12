@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // En caso de error, ocultar el spinner también
                 spinner.style.display = 'none';
             });
-        }, 1000); // Esperar al menos 2 segundos antes de realizar la solicitud a la API
+        }, 1000); // Esperar al menos 1 segundo antes de realizar la solicitud a la API
     });
 });
+

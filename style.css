@@ -45,8 +45,8 @@
 }
 
 .logo-novogar {
-    width: 400px; /* Asegura que el logotipo no se desborde del contenedor */
-    margin-bottom: 20px; /* Espacio opcional entre el logotipo y el título */
+    width: 400px;
+    margin-bottom: 20px; 
 }
 
 #printButton{
@@ -60,9 +60,9 @@ footer {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    position: relative; /* Cambia a fixed */
-    bottom: 0; /* Ancla el footer en la parte inferior */
-    width: 100%; /* Asegura que tenga el ancho completo */
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
     z-index: 999;
   }  
 
@@ -87,17 +87,19 @@ footer > a:hover{
     margin-bottom: 1rem;
 }
 
-/* Estilos para los enlaces dentro del navbar */
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(42, 42, 42); /* Cambia el color del texto a blanco */
+    color: rgb(42, 42, 42);
     font-family: 'sf_pro'; 
     font-size: larger;
   }
   
-  /* Estilos para los enlaces al ser seleccionados */
-  .navbar-light .navbar-nav .nav-link:hover,
-  .navbar-light .navbar-nav .nav-link:focus {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
     color:red;
-    ; /* Cambia el color al pasar el mouse o al estar enfocado */
     transition: 1s;
+  }
+
+.nav-link-actual{
+    text-decoration: 3px underline;
+    color: #e02a3e;
   }
