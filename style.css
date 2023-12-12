@@ -1,0 +1,115 @@
+@font-face {
+    font-family: sf_pro;
+    src: url(./fonts/sf_pro_bold.OTF);
+}
+
+@font-face {
+    font-family: sf_pro_light;
+    src: url(./fonts/sf_pro_light.OTF);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'sf_pro_light';  
+    font-size: auto;
+    font-weight: 400;
+}
+
+*::selection {
+    color: #ffffff;
+    background-color: #e02a3e;
+}
+
+.inputPrintEtiqueta{
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 2rem;
+    text-align: center;
+    color: #e02a3e;
+    font-family: 'sf_pro';
+}
+
+.form-label{
+    font-family:"sf_pro_light";
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-novogar {
+    width: 400px; /* Asegura que el logotipo no se desborde del contenedor */
+    margin-bottom: 20px; /* Espacio opcional entre el logotipo y el título */
+}
+
+#printButton{
+    margin-bottom: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative; /* Cambia a fixed */
+    bottom: 0; /* Ancla el footer en la parte inferior */
+    width: 100%; /* Asegura que tenga el ancho completo */
+    z-index: 999;
+  }  
+
+footer > a{
+    font-family: 'Unbounded', sans-serif; 
+    text-decoration: none;
+    color: grey;
+    transition: .5s;
+}
+
+footer > a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.logo-foot{
+    width: 300px;
+}
+
+.navbar{
+    background-color: #e02a3e;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los enlaces dentro del navbar */
+.navbar-light .navbar-nav .nav-link {
+    color: white; /* Cambia el color del texto a blanco */
+    font-family: 'sf_pro'; 
+    font-size: larger;
+  }
+  
+  /* Estilos para los enlaces al ser seleccionados */
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: #ebfe6e; /* Cambia el color al pasar el mouse o al estar enfocado */
+    transition: 1s;
+  }
+  
+
+.navbar-brand{
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+.navbar-brand:hover{
+    background-color: #ebfe6e;
+    transition: 1s;
+}

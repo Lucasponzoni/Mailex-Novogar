@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Impresión de Etiquetas</title>
 </head>
-<body>
-    <button id="printButton">Imprimir Etiquetas</button>
+<body class="fondo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Logo_Novogar_Fav.png" alt="Bootstrap" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Imprimir etiqueta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cotizar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Generar guía</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container cotizador center-content">
+        <img class="logo-novogar" src="./img/Novogar Logo Large.png" alt="Logo Novogar" srcset="">
+        <h1 class="titulo">Impresion de Etiquetas MailEx</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="inputPrintEtiqueta"></label>
+                    <input type="text" class="form-control" id="numeroEtiqueta" placeholder="Número de etiqueta">
+                </div>
+                <button type="button" class="btn btn-danger" id="printButton">Descargar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="previewContainer"></div>
 
     <script src="script.js"></script>
 </body>
