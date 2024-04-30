@@ -1,6 +1,6 @@
 # Impresión de Etiquetas con Novogar
 
-Esta aplicación web permite imprimir etiquetas utilizando la API de Novogar. Permite generar una vista previa de la etiqueta antes de imprimir y personalizar algunos aspectos como el remitente, destinatario y diseño.
+Esta aplicación web permite imprimir etiquetas utilizando la API de MailEX. Permite generar una vista previa de la etiqueta antes de imprimir y personalizar algunos aspectos como el remitente, destinatario y diseño.
 
 ## Requisitos
 
